@@ -3,7 +3,8 @@ const express = require('express')
 
 // creating an express  application 
 const app = express()
-app.use(express.json()); // here we are describing our middleware
+app.use(express.json()); // this is our built in middleware c:\Users\mylap\Desktop\Arman\othere stuff\Ironman HD Wallpaper 4k.jpeg
+app.use(express.static("public")); // here we are using static method 
 
 const loggerMiddleware  = (req,res,next) => {
   console.log(`[${new Date().toISOString()}] ${req.method} ${req.url}`);
@@ -73,6 +74,10 @@ app.delete("/users/:id", (req,res) => {
 //  using middleware 
 app.get("/special", loggerMiddleware,(req, res) => {
   res.send("special page")
+})
+
+app.use((req,res) => {
+  res.status(404).send("Page not found")   // if all the above request don't  run then we will send this response 
 })
 
 const port = 3000;

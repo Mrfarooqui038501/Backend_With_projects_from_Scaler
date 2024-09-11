@@ -281,3 +281,31 @@ console.log(parsedPath); // Output: { root: '/', dir: '/path/to', base: 'file.tx
 
 
 
+app.use(express.static("public")); // here we are using static method 
+static files
+
+query parameters 
+
+difference between query and router parameters 
+
+aap.use
+
+
+class 3 
+mongodb  bson  , entity, schema, model   
+Put - will used to modify the entire collection
+Patch - used to modify the single attribute in the collection
+mvc
+hooks pre and post hooks
+retadorning  
+
+
+moongose  odm library 
+hooks  pre & post   different event of pre and post hooks in mongoose
+
+
+
+
+
+u50vUlzqPOLmk7bA
+mongodb+srv://mylaptop000123:u50vUlzqPOLmk7bA@users.umpxj.mongodb.net/?retryWrites=true&w=majority&appName=users
