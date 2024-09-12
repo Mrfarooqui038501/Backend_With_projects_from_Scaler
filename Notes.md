@@ -642,7 +642,11 @@ The specific implementation of pre-hooks and post-hooks will vary depending on t
 
 
 
-  
+22.  difference between import and require 
+a. import is ES6 syntax                             &   require is commonJS syntax
+b. import can't be conditional                      &   require can be conditional
+c. import happen at the beginning of the file       &   require can be used anywhere in the file
+d. import can't be conditionally loaded             &   require can be conditionally loaded 
 
 
 
